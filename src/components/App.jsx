@@ -31,7 +31,7 @@ export default class App extends Component {
               <FeedbackOptions options={options} onLeaveFeedback={onLeaveFeedback} ></FeedbackOptions>
             </Section>
             <Section title="Statistics">
-              {good || neutral || bad ? (
+              {countTotalFeedback() ? (
                 <Statistics good={good}
                 neutral={neutral}
                 bad={bad}
